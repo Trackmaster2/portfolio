@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(3, 3, 48);
+            color: white;
+            font-family: 'Poppins',sans-serif;
+            
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 120px;
+            background-color: rgb(4, 4, 27);
+        }
+        nav ul{
+            display: flex;
+            justify-content:center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(4, 46, 53);
+            font-size: 1.5rem;
+        }
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.3px;
+            margin: 40px 94px;
+        }
+        .left{
+            font-size: 2rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+
+        }
+        .leftsection{
+           
+            font-size: 2rem;
+            margin: 30px;
+        }
+        .leftsection .btn{
+            padding: 20px;
+            
+            border: 2px solid whitesmoke;
+            border-radius: 5px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+        .rightsection{
+            width: 80%;
+            
+        }
+        img{
+            width: 400px;
+            height: 400px;
+            
+        }
+        .purple{
+            color: rgb(85, 7, 85);
+        }
+        .grey{
+            color: gray;
+        }
+        #element{
+            color: rgb(233, 210, 9); 
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 2rem;
+        }
+        .secondsection .box{
+            
+            margin: 56px 0;
+            background: white;
+            width: 180vh;
+            height:2px;
+            display:flex;
+           
+
+        }
+        .secondsection .vertical{
+            
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+            
+        }
+        .secondsection img{
+            height: 100px;
+            width: 100px;
+        }
+        footer{
+            margin-top: 200px;
+            background-color: #0e0e1a;
+            height: 200px;
+        }
+        .footer{
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        footer .text-center{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Shubham Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi,my name is <span class="purple">Shubham</span>
+                <div>and I am a passionate,hardworking and ambitious person.I am a</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsecttion"><img src="bg.jpg" alt=""></div>
+        </section>
+         <hr>
+        <section class="secondsection">
+            <span class="grey">What I have done until now</span>
+            <h1>
+                Work Expirience
+            </h1>
+            <div class="box"></div>
+
+              <div class="vertical"><img src="html logo.png" alt=""></div><br>
+              <div class="vertical"><img src="css logo.png" alt=""></div><br>
+              <div class="vertical"><img src="c.png" alt=""></div><br>
+              <div class="vertical"><img src="python logo.png" alt=""></div>
+              
+        </section>
+    </main>
+    <footer>
+     <div class="footer">
+         <div class="footer-first">
+            <h3>Shubham Developer Portfolio</h3>
+         </div>
+         <div class="footer-second">
+           <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+           </ul>
+         </div>
+         <div class="footer-third">
+            <ul>
+                <li>Education</li>
+                <li>Expirience</li>
+                <li>Achievements</li>
+                <li>Social Media</li>
+               </ul> 
+         </div>
+         
+     </div>
+     <div class="text-center">
+       Copyright &#169 www.shubhamportfolio.com | All rights reserved
+     </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Python Developer','Web Developer','Problem Solver'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
